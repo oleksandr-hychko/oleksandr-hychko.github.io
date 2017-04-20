@@ -1,0 +1,172 @@
+/*
+  Reset CSS
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+  Clearfix
+*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* Main styles */
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #fff;
+	box-sizing: border-box;
+	overflow-x: hidden;
+  text-align: center;
+}
+
+.wrap {
+	max-width: 1000px;
+	padding: 0 10px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.button {
+  display: inline-block;
+  font-size: 21px;
+  padding: 18px 72px;
+  border-radius: 3px;
+  background-color: rgb(164, 185, 190);
+  text-decoration: none;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #83bbc8;
+}
+
+h1 {
+  font-size: 38px;
+  padding-bottom: 20px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+
+/* Site */
+header {
+  background: url('../img/header_bg.jpg') center top no-repeat;
+  height: 500px;
+  padding-top: 140px;
+  box-sizing: border-box;
+}
+
+header .button {
+  margin-top: 50px;
+}
+
+.s-2 {
+  padding: 40px 0 80px 0;
+}
+
+.s-2 h1 {
+  color: #535a5e;
+}
+
+.s-2 p {
+  color: #9fa4a7;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  padding-bottom: 50px;
+}
+
+.s-3 {
+  box-sizing: border-box;
+  padding-top: 70px;
+  background: #a4b9be;
+  margin-bottom: 70px;
+}
+
+.s-3 img {
+  margin-top: 50px;
+  width: 86%;
+}
+
+@media screen and (max-width: 959px) {
+
+  .s-2 br {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 639px) {
+
+  header br,
+  .s-3 br {
+    display: none;
+  }
+
+  header h1 {
+    padding-bottom: 20px;
+    line-height: 40px;
+  }
+
+  .s-3 img {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+}
